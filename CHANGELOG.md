@@ -1,10 +1,10 @@
 # Changelog
 
 ## [v1.2.17](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v1.2.17)
-### XX/XX/2024
+### 07/23/2024
 
 **Improved:**
-* Improve accessibility of Font Awesome icons when used for decorative elements (automatic addition of `aria-hidden` attribute)
+* Improve accessibility of Font Awesome icons when used for decorative elements (automatic addition of `aria-hidden` attribute assuming decorative icons)
 
 ## [v1.2.16](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v1.2.16)
 ### 06/24/2024🏒
