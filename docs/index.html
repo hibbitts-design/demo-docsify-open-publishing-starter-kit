@@ -48,14 +48,15 @@
   <div id="app"></div>
   <script>
     // Enter the URL of your own GitHub Repository in between the two quotes below
-    var gitLinkRepoURL = 'https://github.dev/hibbitts-design/demo-docsify-open-publishing-starter-kit';
+    // (this demo links each page to its raw Markdown file instead)
+    var gitLinkRepoURL = 'https://raw.githubusercontent.com/hibbitts-design/demo-docsify-open-publishing-starter-kit';
 
     // Choose where the Edit this Page link appears, either 'top' or 'bottom'
     var editThisPageLinkPosition = 'bottom';
 
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     // Put the link text in [ ] and use \n to start a new line, such as ---\n for a horizontal rule or <br />\n for extra space
-    var editThisPageLinkText = 'Edit this Page';
+    var editThisPageLinkText = 'View as Markdown';
 
     // Set standalone to true to permanently hide the Sidebar and Navbar
     var standalone = false;
@@ -310,7 +311,7 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
-              url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
+              url = gitLinkRepoURL + '/main/docs/' + vm.route.file
             }
             // Each line of editThisPageLinkText becomes its own paragraph, and the text in [ ] becomes the link
             // If there are no [ ], the last line becomes the link
@@ -320,7 +321,7 @@
             }
             var editHtml = lines.map(function (line) {
               return line.replace(/\[([^\]]+)\](?!\()/, function (match, linkText) {
-                return '[:memo:' + linkText + '](' + url + ' ":class=edit-link")';
+                return '[:page_facing_up:' + linkText + '](' + url + ' ":class=edit-link")';
               });
             }).join('\n\n') + '\n'
 
