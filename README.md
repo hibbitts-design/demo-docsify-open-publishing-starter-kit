@@ -9,7 +9,7 @@
 
 > This is a starter kit to quickly create Markdown-based open guides, as well as article, tutorial and documentation websites, with the site generator [Docsify](https://docsify.js.org)  (v5 Preview). Its example guide, Open Education Essentials, is the same guide as in [Grav Open Publishing Space](https://github.com/hibbitts-design/grav-skeleton-open-publishing-space). Global navigation elements can be hidden for seamlessly embedding pages into other platforms or shared as standalone pages. Includes an optional "Edit this Page" link.
 
-Docsify sites use client-side rendering, which means your content will not be indexed by search engines like Google, Bing, or DuckDuckGo.
+Docsify sites draw their pages in the browser, with page addresses after a `#`, so search engines like Google, Bing, or DuckDuckGo index little more than the home page.
 
 📸 Docsify Open Publishing Screenshots
 ---
@@ -39,7 +39,7 @@ A few tips:
 - Pictures go in the same folder as the page that shows them, and an italic line right below a picture works as its caption
 - Learning Objectives and other boxes are callouts, such as `> [!TIP]` – there's also `[!NOTE]`, `[!IMPORTANT]`, `[!WARNING]` and `[!CAUTION]`
 - The home page hides the sidebar with the `<style>` line at its end – copy that line to any other page that isn't part of the reading order
-- Returning readers see a **Continue reading** link on the home page, to the last page they read – remove the Keep My Place line in `docs/index.html` to turn it off
+- Returning readers see a **Continue reading** link on the home page, right above the section cards, to the last page they read – remove the Keep My Place line in `docs/index.html` to turn it off
 
 > [!NOTE]
 > For a site with more than one guide, see the [multiple guides example](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-guides), with a Guides page and a Sample Guide.
