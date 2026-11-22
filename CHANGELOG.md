@@ -17,6 +17,8 @@
 * Each page has its own Browser tab title, such as "Week 1 | CPT-363" or "Module 2 | CPT363-1"
 * The ← → keys go to the previous and next page
 * Updated ReadMe with how the example guide is put together, how to make it your own and how to add a section, and a link to the multiple guides example
+* Badges have WCAG AA contrast: the default background is a little darker
+* Start Reading again after the guide's section cards, as in Grav Open Publishing Space
 
 ## [v2.1.1](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.1.1)
 ### 11/17/2026
